@@ -1,11 +1,14 @@
 @font-face {
   font-family: TrajanPro-Regular;
-  src: url(/fonts/TrajanPro-Regular.otf) format("opentype");
+  src: url("/fonts/trajanpro-regular-webfont.eot");
+  src: url("/fonts/trajanpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/trajanpro-regular-webfont.woff") format("woff"), url("/fonts/trajanpro-regular-webfont.ttf") format("truetype"), url("/fonts/trajanpro-regular-webfont.svg#embedfont-1Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: TrebuchetMS;
-  src: url(/fonts/TrebuchetMS.ttf) format("truetype");
+  font-family: Helvetica_light;
+  src: url(/fonts/helvetica_light.ttf) format("truetype");
 }
 
 .preloader {
@@ -85,37 +88,31 @@
 }
 
 .logo {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
   position: relative;
-  height: 138px;
-  width: 230px;
+  height: 33px;
+  width: 327px;
 }
 
 .footer {
-  position: fixed;
-  background-image: url("/images/trans_bg.png");
-  border: 1px solid #696969;
-  height: 20px;
-  width: 100%;
+  position: absolute;
+  height: 170px;
+  width: 400px;
   bottom: 0px;
-  left: 0px;
-  color: black;
-  font-size: 12px;
-  z-index: 10;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  text-align: right;
+  text-align: left;
+  margin-left: 30px;
+  color: #e6e6e6;
+  font-size: 10px;
 }
 
 .menu-container {
-  position: fixed;
-  top: 145px;
-  left: 59px;
+  position: absolute;
+  top: 35px;
+  left: 400px;
   height: 211px;
-  width: 200px;
-  font-family: "Georgia";
+  width: 800px;
+  font-family: TrajanPro-Regular;
   font-weight: 20;
 }
 
@@ -129,12 +126,15 @@
 
 .menu-container li {
   margin-top: 5px;
+  display: inline-block;
 }
 
 .menu-container ul a {
+  text-shadow: 0 -2px 2px white;
+  font-family: TrajanPro-Regular;
   opacity: 0;
-  font-size: 12px;
-  text-align: left;
+  font-size: 15px;
+  text-align: center;
   width: 200px;
   color: white;
   text-decoration: none;
@@ -203,7 +203,7 @@
 #main-1-link, #main-2-link, #main-3-link, #main-4-link, #main-5-link, #main-6-link, #main-7-link, #main-8-link {
   display: block;
   height: 22px;
-  width: 180px;
+  width: 100px;
   padding-top: 2px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -214,35 +214,35 @@ body {
 }
 
 h1 {
-  font-family: "Georgia";
+  font-family: TrajanPro-Regular;
   font-size: 24px;
-  color: black;
+  color: white;
   margin-left: 30px;
   opacity: 1;
   font-weight: 100;
-  border-bottom-color: black;
+  border-bottom-color: white;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   margin-right: 20px;
 }
 
 h2 {
-  font-family: "TrajanPro-Regular";
+  font-family: TrajanPro-Regular;
   font-size: 13px;
-  color: black;
+  color: white;
   margin: 0px;
   margin-left: 30px;
   opacity: 1;
 }
 
 p {
-  color: black;
+  color: white;
   opacity: 1;
-  margin-left: 30px;
-  margin-right: 20px;
-  margin-top: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 15px;
   letter-spacing: 0.1em;
-  font-family: "Georgia";
+  font-family: "Times New Roman", Times, serif;
   font-size: 15px;
 }
 
@@ -255,9 +255,10 @@ td {
 }
 
 li {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-family: "Georgia";
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  font-family: "Times";
+  color: white;
 }
 
 .social-icon {
@@ -278,10 +279,10 @@ li {
   padding: 10px;
   z-index: 1;
   display: block;
-  top: 80px;
+  top: 120px;
   left: 370px;
   padding: 20px;
-  width: 500px;
+  width: 800px;
   height: auto;
   font-size: 12px;
 }
@@ -305,22 +306,29 @@ li {
 }
 
 .content-border {
-  border: 1px solid white;
-  width: 560px;
+  border: 1px solid gray;
+  width: 760px;
   height: auto;
   padding-left: 15px;
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 0px;
+  background-image: url("/images/trans_bg_black.png");
 }
 
 .content {
+  position: relative;
   padding: 0px;
   margin-bottom: 15px;
   z-index: 20;
-  width: 100%;
+  width: 760px;
   height: auto;
-  background-image: url("/images/trans_bg.png");
+  background-image: url("/images/trans_bg_black.png");
+}
+.content .half-content {
+  width: 50%;
+  height: auto;
+  float: left;
 }
 
 .close-content {
@@ -344,7 +352,7 @@ li {
 
 .gallery-container {
   text-align: center;
-  width: 500px;
+  width: 800px;
 }
 
 .icon {

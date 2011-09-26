@@ -68,10 +68,10 @@ jQuery(document).ready(function() {
 	}
 	//=====menu-animation=====================
 	menu_appear("#main-1-link",1250);
-	menu_appear("#main-2-link",1500);
-	menu_appear("#main-3-link",1750);
-	menu_appear("#main-4-link",2000);
-	menu_appear("#main-5-link",2250);
+	menu_appear("#main-5-link",1500);
+	menu_appear("#main-2-link",1750);
+	menu_appear("#main-3-link",2000);
+	menu_appear("#main-4-link",2250);
 	//menu_appear("#main-6-link",2500);
 	//menu_appear("#main-4-link",2750);
 	//menu_appear("#main-5-link",3000);
@@ -95,37 +95,37 @@ jQuery(document).ready(function() {
 		changePage("#homePage","bg_1.jpg");
 	});
 	jQuery('#main-2-link').click(function(){
-		changePage("#venuePage","bg_2.jpg");
+		changePage("#venuePage","bg_1.jpg");
 	});
 	jQuery('#main-3-link').click(function(){
 		closeSubmenu();
-		changePage("#galleryPage","bg_3.jpg");
+		changePage("#galleryPage","bg_1.jpg");
 		//switchBg("bg6.jpg");
 	});
 	jQuery('#main-4-link').click(function(){
 		closeSubmenu();
-		changePage("#reservationPage","bg_4.jpg");
+		changePage("#reservationPage","bg_1.jpg");
 		//switchBg("bg6.jpg");
 	});
 	jQuery('#main-5-link').click(function(){
 		closeSubmenu();
-		changePage("#calendarPage","bg_5.jpg");
+		changePage("#calendarPage","bg_1.jpg");
 		//switchBg("bg6.jpg");
 	});
 	jQuery('#main-6-link').click(function(){
 		closeSubmenu();
-		changePage("#happyHourPage","happy_hour.jpg");
+		changePage("#happyHourPage","bg_1.jpg");
 		}
 	)
 	jQuery('#main-7-link').click(function(){
-			switchBg('bg_6.jpg');
+			switchBg('bg_1.jpg');
 			closeSubmenu();
 			jQuery('#sub-menu-6').slideToggle("fast");
 		}
 	);
 	jQuery('#main-8-link').click(function(){
 		closeSubmenu();
-		switchBg('contact.jpg');
+		switchBg('bg_1.jpg');
 		jQuery('#sub-menu-8').slideToggle("fast");
 		//changePage("#contactPage","contact.jpg");
 		//switchBg("bg6.jpg");
@@ -140,7 +140,7 @@ jQuery(document).ready(function() {
 			);
 			jQuery(this).next().animate(
 				//alert(jQuery(this).width())
-				{"width":"200px","opacity":"0.8","background-color":"#FFFFFF"},
+				{"width":"100px","opacity":"0.8","background-color":"#FFFFFF"},
 				{duration: 200
 				,ease: "swing"
 				,queue: false}
@@ -201,35 +201,35 @@ jQuery(document).ready(function() {
 		  }
 	);
 	jQuery('#sub-menu-6-item-1').click(function(){
-			changePage("#menuPage-1","bg_1_3.jpg");
+			changePage("#menuPage-1","bg_1.jpg");
 		}
 	)
 	jQuery('#sub-menu-6-item-2').click(function(){
-			changePage("#menuPage-2","bg_1_3.jpg");
+			changePage("#menuPage-2","bg_1.jpg");
 		}
 	)
 	jQuery('#sub-menu-6-item-3').click(function(){
-			changePage("#menuPage-3","bg_4.jpg");
+			changePage("#menuPage-3","bg_1.jpg");
 		}
 	)
 	jQuery('#sub-menu-6-item-4').click(function(){
-			changePage("#menuPage-4","wine_bottles.jpg");
+			changePage("#menuPage-4","bg_1.jpg");
 		}
 	)
 	jQuery('#sub-menu-6-item-5').click(function(){
-			changePage("#menuPage-5","brunch.jpg");
+			changePage("#menuPage-5","bg_1.jpg");
 		}
 	)
 	jQuery('#sub-menu-6-item-6').click(function(){
-			changePage("#menuPage-6","cocktails.jpg");
+			changePage("#menuPage-6","bg_1.jpg");
 		}
 	)
 	jQuery('#sub-menu-8-item-1').click(function(){
-			changePage("#contactPage-1","contact.jpg");
+			changePage("#contactPage-1","bg_1.jpg");
 		}
 	)
 	jQuery('#sub-menu-8-item-2').click(function(){
-			changePage("#contactPage-2","contact.jpg");
+			changePage("#contactPage-2","bg_1.jpg");
 		}
 	)
 	setInterval(slideShow,4500);
@@ -293,7 +293,7 @@ jQuery(window).resize(function() {
 
 function changePage(targetPage,targetBg){
 	//var inPoint = (parseInt(jQuery("body").css("width"))/2) - (parseInt(jQuery(targetPage).css("width"))/2) - 100 + "px"
-	var inPoint = "370px"
+	var inPoint = "340px"
 	var outPoint2 =  (0 - parseInt(jQuery(targetPage).css("width"))) + "px"
 	var outPoint =  (parseInt(jQuery("body").css("width")) + parseInt(jQuery(targetPage).css("width"))) + "px"
 	//alert(inPoint);
@@ -322,16 +322,16 @@ function slideShow(){
 			switchBg("bg_1.jpg");
 		}
 		if(whichPic == 2){
-			switchBg("bg_1_2.jpg");
+			switchBg("bg_2.jpg");
 		}
 		if(whichPic == 3){
-			switchBg("bg_1_3.jpg");
+			switchBg("bg_1.jpg");
 		}
 		if(whichPic == 4){
-			switchBg("bg_1_4.jpg");
+			switchBg("bg_2.jpg");
 		}
 		if(whichPic == 5){
-			switchBg("bg_1_5.jpg");
+			switchBg("bg_1.jpg");
 			whichPic = 0;
 		}
 
