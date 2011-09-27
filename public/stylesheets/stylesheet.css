@@ -146,7 +146,7 @@
   left: 20px;
   margin-top: 0px;
   background-color: #594a42;
-  height: 3px;
+  height: 2px;
   width: 0px;
 }
 
@@ -241,7 +241,7 @@ p {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 15px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
 }
@@ -352,7 +352,7 @@ li {
 
 .gallery-container {
   text-align: center;
-  width: 800px;
+  width: 700px;
 }
 
 .icon {

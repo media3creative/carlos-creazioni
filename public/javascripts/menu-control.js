@@ -1,7 +1,7 @@
 var whichPic = 1;
 var currentPage = "#page0"
 var bg_1_pic = "bg_1.jpg"
-var bg_2_pic = "bg_1.jpg"
+var bg_1_pic = "bg_1.jpg"
 var agent=navigator.userAgent.toLowerCase();
 var is_iphone = ((agent.indexOf('iphone') != -1));
 var is_ipad = ((agent.indexOf('ipad') != -1));
@@ -322,13 +322,13 @@ function slideShow(){
 			switchBg("bg_1.jpg");
 		}
 		if(whichPic == 2){
-			switchBg("bg_2.jpg");
+			switchBg("bg_1.jpg");
 		}
 		if(whichPic == 3){
 			switchBg("bg_1.jpg");
 		}
 		if(whichPic == 4){
-			switchBg("bg_2.jpg");
+			switchBg("bg_1.jpg");
 		}
 		if(whichPic == 5){
 			switchBg("bg_1.jpg");
@@ -347,7 +347,7 @@ function switchBg(whichBg){
 	
 	jQuery(".bg2").fadeOut(4000);
 	jQuery(".bg1").fadeIn(4000);
-	bg_2_pic = bg_1_pic;
+	bg_1_pic = bg_1_pic;
 	bg_1_pic = whichBg;
 	}
 }
